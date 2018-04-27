@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+html {
+    font-size: 8px;
+}
+
+
+header {
+    background: -webkit-linear-gradient(0deg, #005999 0%, #1378bf 100%);
+    background: -moz-linear-gradient(0deg, #005999 0%, #1378bf 100%);
+    background: -o-linear-gradient(0deg, #005999 0%, #1378bf 100%);
+    background: -ms-linear-gradient(0deg, #005999 0%, #1378bf 100%);
+    background: linear-gradient(90deg, #005999 0%, #1378bf 100%);
+    width: 100%;
+    padding: 10% 10% 0% 10%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+    text-transform: uppercase;   
+}
+
+header p {
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: lightgrey;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    width: 408px;
+}
+
+.content {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content__block {
+    z-index: 1;
+    padding: 3%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 30%;
+    transition: 0.5s;
+    margin-bottom: -55px;
+}
+
+.content__block h2 {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #fefefe;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+}
+
+.content__block p {
+    font-family: 'Roboto', sans-serif;
+    color:  lightgray;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 100%;
+}
+
+a.rollover-web {
+    background: url(../img/weblvl.png);
+    display: block;
+    width: 78px;
+    height: 66px;
+}
+
+a.rollover-pen {
+    background: url(../img/pencilcase.png);
+    display: block;
+    width: 49px;
+    height: 68px;
+}
+
+a.rollover-tar {
+    background: url(../img/target.png);
+    display: block;
+    width: 67px;
+    height: 67px;
+}
+.hidden {
+    visibility: hidden;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden a{
+    margin-top: 5px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color:  #191919;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.hidden a:hover {
+    color:  #005999;
+}
+
+.read-more {
+    margin-top: 25px;
+    text-transform: uppercase;
+
+}
+
+.read-more a {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color:  #005999;
+}
+
+
+
+.content__block:hover {
+    background-color:  #ffffff;
+    box-shadow: 0 15px 24px 0 rgba(23, 3, 79, 0.1);
+}
+
+.content__block:hover .hidden{
+    visibility: visible;
+}
+
+.content__block:hover h2{
+    color:  #191919;
+}
+.content__block:hover p {
+    color:  #191919;
+}
+
+.content__block:hover .webimg {
+    background-image: url(../img/web_blue.png);
+}
+
+.content__block:hover a.rollover-web {
+    background: url(../img/web_blue.png);
+}
+
+.content__block:hover a.rollover-pen {
+    background: url(../img/pencilcase_blue.png);
+}
+
+.content__block:hover a.rollover-tar {
+    background: url(../img/target_blue.png);
+}
+
+/*----------------------------ARTICLE-----------------------------*/
+
+article {
+    text-align: center;
+    padding: 10% 10% 5% 10%;
+}
+
+article h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #262626;
+    font-size: 5.7rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+article p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+}
+
+.content-bottom {
+    padding: 3% 10% 5% 10%;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.nav_btns a {
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color:  #c7c7c7;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.nav_btns a:hover {
+    background-color:  #005999;
+    box-shadow: 3px 5px 24px 0px rgba(19, 120, 191, 0.5);
+    color: #ffffff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.products {
+    margin-top: 20px;
+}
+
+.item-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.item a {
+    text-decoration: none;
+
+}
+
+.item-box {
+    margin-top: 15px;
+    background-color: #fafafa;
+    min-width: 250px;
+    min-height: 170px;
+}
+
+.item:hover .item-box {
+    background: -webkit-linear-gradient(0deg, #005999 0%, #1378bf 100%);
+    background: -moz-linear-gradient(0deg, #005999 0%, #1378bf 100%);
+    background: -o-linear-gradient(0deg, #005999 0%, #1378bf 100%);
+    background: -ms-linear-gradient(0deg, #005999 0%, #1378bf 100%);
+    background: linear-gradient(90deg, #005999 0%, #1378bf 100%);
+}
+
+.item-discription h3 {
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+}
+
+.item-discription p {
+    font-family: 'Roboto', sans-serif;
+    color:  #8c8c8c;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+@media screen and (min-width: 1250px){
+    .item-box {
+        width: 330px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 965px){
+    .item-flex {
+        justify-content: space-around;
+    }
+
+    .item {
+        width: 40%;
+        height: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    .nav_btns {
+        margin-top: 20px;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 7px;
+    }
+    .content__block {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 4px;
+    }
+    .item-flex {
+        justify-content: space-around;
+    }
+
+    .item {
+        width: 150%;
+        margin-left: 50px;
+    }
+    .item-box {
+        width: 90%;
+        height: 60%;
+
+    }
+}
+
+@media screen and (max-width: 455px) {
+   
+    body {
+        width: 150%;
+    }
+}
+
